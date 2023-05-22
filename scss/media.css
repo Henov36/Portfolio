@@ -1,0 +1,129 @@
+@media (max-width: 1312px) {
+  h1 {
+    font-size: calc(var(--index) * 4);
+  }
+  h2 {
+    font-size: calc(var(--index) * 3.3);
+  }
+  .header__contant {
+    padding: 0px 2.5vw;
+  }
+  .header__links {
+    width: 45vw;
+  }
+  .header__section-content-name div {
+    font-size: calc(var(--index) * 3);
+    margin-top: calc(var(--index) * 2.7);
+  }
+  .section__works-container {
+    padding: 0px 2.5vw;
+  }
+  .discription h5 {
+    margin-left: 2.5vw;
+  }
+  .footer__container {
+    padding: 0px 2.5vw;
+  }
+}
+@media (max-width: 1057px) {
+  .tech__skills-contant {
+    justify-content: flex-start;
+  }
+}
+@keyframes rolingrightSmallDisplay {
+  to {
+    transform: translateX(50px);
+  }
+}
+@keyframes rolingleftSmallDisplay {
+  to {
+    transform: translateX(-70px);
+  }
+}
+@media (max-width: 932px) {
+  .window {
+    font-size: 100px;
+  }
+  .header__links {
+    width: 55vw;
+  }
+  .header__section-content-h1 :first-child {
+    margin-right: calc(var(--index) * 5);
+    margin-top: calc(var(--index) * 7);
+    animation: rolingrightSmallDisplay 1.8s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  h1 {
+    font-size: calc(var(--index) * 3);
+  }
+  h2 {
+    font-size: calc(var(--index) * 2.6);
+  }
+  .header__section-content-name div {
+    font-size: calc(var(--index) * 2.3);
+    margin-top: calc(var(--index) * 1.3);
+    margin-left: calc(var(--index) * 10);
+    animation: rolingleftSmallDisplay 2.2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+}
+@media (max-width: 768px) {
+  .header.mouseover {
+    background-color: rgba(255, 255, 255, 0.2549019608);
+    color: #fff;
+  }
+  .header.mouseover a {
+    color: #fff;
+  }
+  .header__contant .header__menu-burger {
+    display: flex;
+  }
+  .header__contant .header__links {
+    display: none;
+  }
+  .discription {
+    height: fit-content;
+    width: 100%;
+  }
+  .discription h5 {
+    margin-top: 5vw;
+  }
+  .slider {
+    transform: rotate(0deg);
+    height: 80%;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 674px) {
+  h3 {
+    font-size: calc(var(--index) * 2);
+  }
+  .tech__skill-info {
+    margin-top: 0;
+  }
+}
+@media (max-width: 520px) {
+  .window {
+    font-size: 70px;
+  }
+  .about-text {
+    letter-spacing: 0 !important;
+  }
+  .swiper-button-prev {
+    left: calc(var(--index) * -7) !important;
+  }
+  .swiper-button-next {
+    right: calc(var(--index) * -7) !important;
+  }
+}
+@media (max-width: 478px) {
+  .header__section-content-name div {
+    font-size: calc(var(--index) * 1.8);
+    margin-left: calc(var(--index) * 16);
+  }
+  .header__section-content-h1 :first-child {
+    margin-right: calc(var(--index) * 8);
+  }
+}/*# sourceMappingURL=media.css.map */

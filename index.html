@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css reset/reset.css">
+	<link rel="stylesheet" href="./scss/style.css">
+	<link rel="stylesheet" href="./scss/media.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+	<script src="./js/three.js" defer></script>
+	<script src="./js/vanta-net.js" defer></script>
+	<script src="./js/main.js" defer></script>
+
+
+	<title>My Portfolio</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<header class="header">
+
+				<div class="header__contant">
+					<div class="header__menu-burger">
+						<span></span>
+					</div>
+					<nav class="header__links">
+						<ul class="header__list">
+							<li class="header__li">
+								<a class="header__link" href="#header__section">Главная</a>
+							</li>
+							<li class="header__li">
+								<a class="header__link" href="#section__about">Обо Мне</a>
+							</li>
+							<li class="header__li">
+								<a class="header__link" href="#section__works">Tech-SkillS</a>
+							</li>
+							<li class="header__li">
+								<a class="header__link" href="#section__portfolio">My works</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__options">
+						<div class="option__lang">
+							<select name="lang" id="lang">
+								<option value="Eng">ENG</option>
+								<option value="UA">UA</option>
+								<option value="RU">RU</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<ul class="header__list-hidden hidden">
+					<li class="header__li">
+						<a class="header__link" href="#header__section">Главная</a>
+					</li>
+					<li class="header__li">
+						<a class="header__link" href="#section__about">Обо Мне</a>
+					</li>
+					<li class="header__li">
+						<a class="header__link" href="#section__works">Tech-SkillS</a>
+					</li>
+					<li class="header__li">
+						<a class="header__link" href="#section__portfolio">My works</a>
+					</li>
+				</ul>
+			</header>
+
+
+
+
+			<section class="header__section" id="header__section">
+				<div class="header__section-layers">
+					<div class="window">
+						STAY WITH UKRAINE
+					</div>
+
+					<div class="header__section-content-h1">
+						<h1>
+							Project Portfolio
+						</h1>
+					</div>
+					<div class="header__section-content-name">
+						<div>
+							by Kostiantyn Henov
+						</div>
+					</div>
+					<div class="layer layer__back" style="background-image: url(img/Base.png);"></div>
+					<div class="layer layer__middle" style="background-image: url(img/Base-middle2.png);"></div>
+					<div class="layer layer__front" style="background-image: url(img/Base-front7.png);"></div>
+				</div>
+			</section>
+
+			<main>
+				<section class="section section__about" id="section__about">
+					<div class="section__about-container">
+						<h2>
+							About Me
+						</h2>
+						<div class="about__contant">
+							<div class="swiper swiper-about">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="about-text">
+											Меня зовут Константин,<br>Я front-end разработчик из
+											<span>України</span>,город
+											Одесса!<br>Начал заниматься программированием после начала войны.<br>Мне
+											очень
+											нравится web-разработка.<br> Особое удовольствие получаю от анимации,
+											придавая сайтам
+											интерактивности. <br>Интересуюсь WebGL и Three.js<br>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="about-text">
+											Быстро учусь, коммуникабельный, стрессоустройчивый, мотивированный к работе
+											и
+											обучению!<br>Рабочий опыт имею только на фрилансе.<br>Закончил курсы
+											Udemy,на данный
+											момент учусь
+											самостоятельно
+											искренне хотелось бы найти дружную команду и менторов, которые смогли бы
+											направить в
+											нужном
+											направлении.<br>Английский выше
+											среднего
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="about-text">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, enim.
+											Exercitationem totam corrupti vitae itaque. Libero, dolore suscipit tempore
+											reprehenderit impedit, dolor consectetur sunt aliquam obcaecati, in
+											molestias tempora modi!
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev swiper-button"></div>
+								<div class="swiper-button-next swiper-button"></div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="section section__works" id="section__works">
+					<div class="section__works-container" id="section__works-container">
+						<div class="works-contant">
+							<!-- <div class="fade"></div> -->
+							<div class="tech__skill-h1">
+								<h3>
+									My Tech-SkillS
+								</h3>
+								<div class="switch" id="switch">
+									<img src="./img/random-2dice-svgrepo-com.svg" alt="">
+								</div>
+							</div>
+
+							<div class="tech__skill-info">
+								<div class="tech__skills-contant tech__block">
+									<div class="contant-list">
+										<img src="./img/css3-svgrepo-com.svg" alt="">
+										CSS
+									</div>
+									<div class="contant-list">
+										<img src="./img/sass-svgrepo-com (1).svg" alt="">
+										SASS
+									</div>
+									<div class="contant-list">
+										<img src="./img/html5-svgrepo-com (2).svg" alt="">
+										HTML
+									</div>
+									<div class="contant-list">
+										<img src="./img/figma-svgrepo-com (1).svg" alt="">
+										Figma
+									</div>
+									<div class="contant-list">
+										<img src="./img/github-142-svgrepo-com.svg" alt="">
+										GitHub
+									</div>
+									<div class="contant-list">
+										<img src="./img/javascript-svgrepo-com.svg" alt="">
+										JavaScript
+									</div>
+									<div class="contant-list">
+										<img src="./img/bootstrap-svgrepo-com.svg" alt="">
+										Bootstrap
+									</div>
+								</div>
+								<div class="used__tehnologis tech__block">
+									<div style="padding-bottom: 15px;">
+										The libraries
+									</div>
+									<div>Vanta.js</div>
+									<div>Swiper API</div>
+									<div>Three.js</div>
+									<div>GSAP</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section__portfolio" id="section__portfolio">
+
+					<div class="discription">
+						<h5>My Works</h5>
+					</div>
+
+					<div class="swiper slider slider__main">
+						<div class="swiper-wrapper slider__wrapper">
+
+							<div class="swiper-slide slider-item slider-front-item">
+								<div class="slider__img slider-visible" data-swiper-parallax="10%"
+									style="background-image: url(./img/city.jpg)">
+									Verdi
+								</div>
+								<div class="slider__img slider__img-hidden hidden-slide" data-swiper-parallax="10%"
+									style="background-image: url(./img/Bild_Büren-1-4-1024x683.jpg)">
+
+									<a href="https://henov36.github.io/Verdi/" target="_blank">
+
+									</a>
+									<div>
+										Verdi
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide slider-item slider-front-item">
+								<div class="slider__img slider-visible" data-swiper-parallax="15%"
+									style="background-image: url(./img/car.jpg);">
+									METACHAIN
+								</div>
+								<div class="slider__img slider__img-hidden hidden-slide" data-swiper-parallax="10%"
+									style="background-image: url(./img/meta.png)">
+									<a href="https://henov36.github.io/Metachain/" target="_blank">
+
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide slider-item slider-front-item">
+								<div class="slider__img slider-visible" data-swiper-parallax="10%"
+									style="background-image: url(./img/orange.jpg);">
+									Ableton
+								</div>
+								<div class="slider__img slider__img-hidden hidden-slide" data-swiper-parallax="10%"
+									style="background-image: url(./img/main__page__photo.png)">
+									<a href="https://henov36.github.io/Ableton/" target="_blank">
+
+									</a>
+									<div>
+										Ableton
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide slider-item slider-front-item">
+								<div class="slider__img slider-visible" data-swiper-parallax="15%"
+									style="background-image: url(./img/lastimg.png);">
+									IQ TEST
+								</div>
+								<div class="slider__img slider__img-hidden hidden-slide" data-swiper-parallax="10%"
+									style="background-image: url(./img/2401680.jpg)">
+
+									<a href="https://henov36.github.io/IQtest/" target="_blank">
+
+									</a>
+									<div>
+										IQ TEST
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper slider slider__bg">
+						<div class="swiper-wrapper slider__wrapper">
+
+							<div class="swiper-slide slider-item">
+								<div class="slider__img" data-swiper-parallax="10%"
+									style="background-image: url(./img/city.jpg);">
+									Verdi
+								</div>
+							</div>
+							<div class="swiper-slide slider-item">
+								<div class="slider__img" data-swiper-parallax="15%"
+									style="background-image: url(./img/car.jpg);">
+									METACHAIN
+								</div>
+							</div>
+							<div class="swiper-slide slider-item">
+								<div class="slider__img" data-swiper-parallax="10%"
+									style="background-image: url(./img/orange.jpg);">
+									Ableton
+								</div>
+							</div>
+							<div class="swiper-slide slider-item">
+								<div class="slider__img" data-swiper-parallax="15%"
+									style="background-image: url(./img/lastimg.png);">
+									IQ TEST
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<ul class="footer__list">
+						<li class="footer__link">
+							<a href="https://github.com/Henov36" class='link' target="_blank">
+								<img fill="#fff" src="./img/github-142-svgrepo-com fff (1).svg" alt="#">
+							</a>
+						</li>
+						<li class="footer__link">
+							<a href="https://www.linkedin.com/in/henov36/" class='link' target="_blank">
+								<img src="./img/free_icon_1 lin fff.svg" alt="">
+							</a>
+						</li>
+						<li class="footer__link">
+							<a href="#" class='link copy__mail'>
+								<img src="./img/free_icon_ mail1.svg" alt="">
+							</a>
+						</li>
+						<div class="copied hidden">
+							Mail copied
+						</div>
+					</ul>
+					<div class="copyright">
+						Design by Kostiantyn Henov
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
