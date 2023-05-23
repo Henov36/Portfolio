@@ -96,6 +96,14 @@
     margin-top: 100px;
   }
 }
+@media (max-width: 674px) {
+  h3 {
+    font-size: calc(var(--index) * 2);
+  }
+  .tech__skill-info {
+    margin-top: 0;
+  }
+}
 @media (max-width: 600px) {
   .section__works {
     height: fit-content;
@@ -110,19 +118,11 @@
   .contant-list {
     width: calc(var(--index) * 13) !important;
   }
-  .tech__skills-contant {
-    padding-bottom: 20px;
+  .tech__skills-contant .contant-list {
+    margin-bottom: 20px;
   }
   .used__tehnologis {
     max-width: 33vw;
-  }
-}
-@media (max-width: 674px) {
-  h3 {
-    font-size: calc(var(--index) * 2);
-  }
-  .tech__skill-info {
-    margin-top: 0;
   }
 }
 @media (max-width: 520px) {
@@ -133,10 +133,10 @@
     letter-spacing: 0 !important;
   }
   .swiper-button-prev {
-    left: calc(var(--index) * -7) !important;
+    left: calc(var(--index) * -6) !important;
   }
   .swiper-button-next {
-    right: calc(var(--index) * -7) !important;
+    right: calc(var(--index) * -6) !important;
   }
 }
 @media (max-width: 478px) {
@@ -145,6 +145,6 @@
     margin-left: calc(var(--index) * 13);
   }
   .header__section-content-h1 :first-child {
-    margin-right: calc(var(--index) * 8);
+    margin-right: calc(var(--index) * 6);
   }
 }/*# sourceMappingURL=media.css.map */
