@@ -25,6 +25,7 @@ window.addEventListener('scroll', () => {
 	let currentScrollPos = window.pageYOffset;
 	prevScrollPos > currentScrollPos ? header.classList.remove("opacity") : header.classList.add("opacity");
 	prevScrollPos = currentScrollPos;
+	currentScrollPos == 0 ? header.style.position = 'absolute' : header.style.position = 'fixed';
 	const sectionWorkCoords = sectionWork.getBoundingClientRect();
 	if (sectionWorkCoords.top < window.innerHeight && sectionWorkCoords.bottom >= 0) {
 		techBlock.classList.add('animation');
