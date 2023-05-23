@@ -45,6 +45,14 @@
 	.tech__skills-contant {
 		justify-content: flex-start;
 	}
+
+	.works-contant {
+		.tech__skill-h1 {
+			div {
+				top: calc(var(--index) * 6);
+			}
+		}
+	}
 }
 
 
@@ -99,6 +107,9 @@
 		}
 	}
 
+
+
+
 }
 
 @media(max-width:768px) {
@@ -121,6 +132,16 @@
 			display: none;
 		}
 	}
+
+	.used__tehnologis {
+		max-width: 33vw;
+
+		:not(:first-child) {
+			height: calc(var(--index) * 4);
+			margin-top: 20px;
+		}
+	}
+
 
 	.discription {
 		height: fit-content;
@@ -146,9 +167,9 @@
 		font-size: calc(var(--index) * 2);
 	}
 
-	.tech__skill-info {
-		margin-top: 0;
-	}
+	// .tech__skill-info {
+	// 	margin-top: 0;
+	// }
 }
 
 
@@ -178,13 +199,18 @@
 
 	.used__tehnologis {
 		max-width: 33vw;
+
+		:not(:first-child) {
+			height: calc(var(--index) * 5);
+			margin-top: 35px;
+		}
 	}
 }
 
 
 @media (max-width:520px) {
 	.window {
-		font-size: 70px;
+		font-size: 60px;
 	}
 
 	.about-text {

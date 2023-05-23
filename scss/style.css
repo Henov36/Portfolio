@@ -149,12 +149,12 @@ h3 {
   text-align: center;
   align-items: flex-start;
   justify-content: center;
-  gap: 30px;
   transition: 0.4s all ease-in-out;
   transform: translateY(-100vh);
 }
 .header__list-hidden li {
   margin-left: 30px;
+  margin-bottom: 35px;
 }
 .header__list-hidden a {
   font-size: calc(var(--index) * 3);
@@ -201,7 +201,7 @@ h3 {
   z-index: 100001;
   animation: swap 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
   font-family: "Fight This";
 }
 

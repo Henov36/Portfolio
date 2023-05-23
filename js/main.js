@@ -24,7 +24,8 @@ let prevScrollPos = window.pageYOffset;
 window.addEventListener('scroll', () => {
 	let currentScrollPos = window.pageYOffset;
 	if (currentScrollPos > 0) {
-		prevScrollPos > currentScrollPos ? header.classList.remove("opacity") : header.classList.add("opacity");
+		prevScrollPos > currentScrollPos ? 
+		header.classList.remove("opacity") : header.classList.add("opacity");
 		prevScrollPos = currentScrollPos;
 	}
 
