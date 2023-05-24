@@ -24,6 +24,10 @@ body {
   overflow-y: hidden;
 }
 
+.none {
+  display: none !important;
+}
+
 :root {
   --index: calc(1vw + 1vh);
   --transition: ease 1s cubic-bezier(2, .6, 0, 1);
@@ -357,15 +361,19 @@ h3 {
   overflow: visible !important;
   width: 100%;
 }
+.swiper-about .swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, -50px);
+}
+.swiper-about .swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, -50px);
+}
 
 .swiper-button-prev {
-  position: absolute;
-  left: calc(var(--index) * -3) !important;
+  color: #fff !important;
 }
 
 .swiper-button-next {
-  position: absolute;
-  right: calc(var(--index) * -3) !important;
+  color: #fff !important;
 }
 
 .swiper-button {

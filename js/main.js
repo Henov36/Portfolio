@@ -24,8 +24,8 @@ let prevScrollPos = window.pageYOffset;
 window.addEventListener('scroll', () => {
 	let currentScrollPos = window.pageYOffset;
 	if (currentScrollPos > 0) {
-		prevScrollPos > currentScrollPos ? 
-		header.classList.remove("opacity") : header.classList.add("opacity");
+		prevScrollPos > currentScrollPos ?
+			header.classList.remove("opacity") : header.classList.add("opacity");
 		prevScrollPos = currentScrollPos;
 	}
 
@@ -137,22 +137,33 @@ btnSwitch.addEventListener('click', () => {
 //=== SLIDER ===///
 
 const slider = new Swiper('.slider__main', {
-	freeMode: true,
 	centeredSlides: true,
-	slidesPerView: 1.5,
+	freeMode: true,
+	slidesPerView: 1,
+	direction: 'vertical',
+	// initialSlide: ,
+	// loop: true,
+	spaceBetween: 30,
 	mousewheel: {
 		sensitivity: 5
 	},
 	parallax: true,
 	breakpoints: {
 		980: {
-			slidesPerView: 3
+			slidesPerView: 3,
+			direction: 'horizontal',
+
 		},
 		640: {
-			slidesPerView: 2
+			slidesPerView: 2,
+			direction: 'horizontal',
+			spaceBetween: 0,
 		}
-
-	}
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 
 });
 
@@ -198,12 +209,19 @@ slideContainers.forEach(item => {
 slider.controller.control = sliderBg;
 const disc = document.querySelector('.discription');
 
+window.addEventListener('resize', function () {
+	if (window.innerWidth >= 600 && window.innerWidth <= 768) {
+		slider.on('slideChange', e => {
+			slider.activeIndex >= 0 ? disc.classList.remove('hidden') : disc.classList.add('hidden')
+		})
+		console.log('Promejnost');
+	} else {
+		slider.on('slideChange', e => {
+			slider.activeIndex > 0 ? disc.classList.add('hidden') : disc.classList.remove('hidden')
+		})
+	}
+})
 
-if (window.innerWidth > 768) {
-	slider.on('slideChange', e => {
-		slider.activeIndex > 0 ? disc.classList.add('hidden') : disc.classList.remove('hidden')
-	})
-}
 
 
 

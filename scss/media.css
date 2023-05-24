@@ -80,6 +80,9 @@
   .header.mouseover a {
     color: #fff;
   }
+  .slider__img {
+    font-size: 40px;
+  }
   .header__contant .header__menu-burger {
     display: flex;
   }
@@ -96,6 +99,7 @@
   .discription {
     height: fit-content;
     width: 100%;
+    pointer-events: none;
   }
   .discription h5 {
     margin-top: 5vw;
@@ -105,10 +109,58 @@
     height: 80%;
     margin-top: 100px;
   }
+  .slider__main .swiper-button-prev {
+    top: var(--swiper-navigation-sides-offset, -85px) !important;
+    right: var(--swiper-navigation-sides-offset, 100px) !important;
+    color: #fff !important;
+    left: auto !important;
+  }
+  .slider__main .swiper-button-next {
+    top: var(--swiper-navigation-sides-offset, -85px) !important;
+    right: var(--swiper-navigation-sides-offset, 40px) !important;
+    color: #fff !important;
+  }
+  .footer__link a:hover {
+    box-shadow: none;
+  }
 }
 @media (max-width: 674px) {
   h3 {
     font-size: calc(var(--index) * 2);
+  }
+}
+@media (max-width: 640px) {
+  .slider__bg {
+    display: none !important;
+  }
+  .slider__main .slider-item {
+    margin: 0 auto;
+    max-width: 95vw;
+  }
+  .slider__main .swiper-button-prev {
+    top: var(--swiper-navigation-sides-offset, -45px) !important;
+    transform: rotate(90deg) !important;
+    right: var(--swiper-navigation-sides-offset, 30px) !important;
+    left: auto !important;
+  }
+  .slider__main .swiper-button-next {
+    top: var(--swiper-navigation-sides-offset, 15px) !important;
+    transform: rotate(90deg) !important;
+    right: var(--swiper-navigation-sides-offset, 30px) !important;
+  }
+  .footer {
+    height: 70px;
+  }
+  .footer__list {
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .copied {
+    font-size: calc(var(--index) * 1.1) !important;
+    width: 60px;
+  }
+  .footer__link {
+    margin-right: calc(var(--index) * 1.1);
   }
 }
 @media (max-width: 600px) {
@@ -142,12 +194,6 @@
   }
   .about-text {
     letter-spacing: 0 !important;
-  }
-  .swiper-button-prev {
-    left: calc(var(--index) * -6) !important;
-  }
-  .swiper-button-next {
-    right: calc(var(--index) * -6) !important;
   }
 }
 @media (max-width: 478px) {
