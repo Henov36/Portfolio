@@ -209,18 +209,18 @@ slideContainers.forEach(item => {
 slider.controller.control = sliderBg;
 const disc = document.querySelector('.discription');
 
-window.addEventListener('resize', function () {
-	if (window.innerWidth >= 600 && window.innerWidth <= 768) {
-		slider.on('slideChange', e => {
-			slider.activeIndex >= 0 ? disc.classList.remove('hidden') : disc.classList.add('hidden')
-		})
-		console.log('Promejnost');
-	} else {
-		slider.on('slideChange', e => {
-			slider.activeIndex > 0 ? disc.classList.add('hidden') : disc.classList.remove('hidden')
-		})
-	}
-})
+
+if (window.innerWidth >= 600 && window.innerWidth <= 768) {
+	slider.on('slideChange', e => {
+		slider.activeIndex >= 0 ? disc.classList.remove('hidden') : disc.classList.add('hidden')
+	})
+
+} else {
+	slider.on('slideChange', e => {
+		slider.activeIndex > 0 ? disc.classList.add('hidden') : disc.classList.remove('hidden')
+	})
+}
+
 
 
 

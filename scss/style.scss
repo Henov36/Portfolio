@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @font-face {
 	font-family: 'Fight This';
@@ -450,9 +450,11 @@ h3 {
 		width: 50vw;
 		margin: 0 auto;
 		// text-align: center;
-		font-size: calc(var(--index) * 0.8);
+		font-size: calc(var(--index) * 1.2);
+		line-height: 40px;
 		letter-spacing: calc(var(--index) * 0.1);
-		font-family: 'Europe_b';
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
 	}
 
 
@@ -502,7 +504,7 @@ h3 {
 
 .section__works {
 	height: 100vh;
-	margin-top: 100px;
+	margin-top: 200px;
 	overflow: hidden;
 	position: relative;
 

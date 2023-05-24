@@ -53,6 +53,9 @@
 			}
 		}
 	}
+	.section__works{
+		margin-top: 150px;
+	}
 }
 
 
@@ -270,7 +273,7 @@
 @media (max-width:600px) {
 	.section__works {
 		height: fit-content;
-		margin-top: 0px;
+		// margin-top: 0px;
 	}
 
 	.tech__skill-h1 {
@@ -298,6 +301,10 @@
 			height: calc(var(--index) * 5);
 			margin-top: 35px;
 		}
+	}
+
+	.section__portfolio {
+		margin-top: 70px;
 	}
 }
 
@@ -327,4 +334,9 @@
 			margin-right: calc(var(--index) * 6);
 		}
 	}
+
+	.about-text {
+		line-height: 30px !important;
+	}
+
 }

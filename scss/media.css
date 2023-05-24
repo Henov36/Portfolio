@@ -32,6 +32,9 @@
   .works-contant .tech__skill-h1 div {
     top: calc(var(--index) * 6);
   }
+  .section__works {
+    margin-top: 150px;
+  }
 }
 @keyframes rolingrightSmallDisplay {
   to {
@@ -166,7 +169,6 @@
 @media (max-width: 600px) {
   .section__works {
     height: fit-content;
-    margin-top: 0px;
   }
   .tech__skill-h1 {
     height: 100px !important;
@@ -187,6 +189,9 @@
     height: calc(var(--index) * 5);
     margin-top: 35px;
   }
+  .section__portfolio {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 520px) {
   .window {
@@ -203,5 +208,8 @@
   }
   .header__section-content-h1 :first-child {
     margin-right: calc(var(--index) * 6);
+  }
+  .about-text {
+    line-height: 30px !important;
   }
 }/*# sourceMappingURL=media.css.map */

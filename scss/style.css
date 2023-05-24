@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "Fight This";
   src: local("Fight This"), url(../fonts/FIGHTT3_.ttf);
@@ -344,9 +345,11 @@ h3 {
 .about__contant .about-text {
   width: 50vw;
   margin: 0 auto;
-  font-size: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 1.2);
+  line-height: 40px;
   letter-spacing: calc(var(--index) * 0.1);
-  font-family: "Europe_b";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 .about__contant span {
   background: linear-gradient(to bottom, #1B15CF 50%, #F8FF2B 50%);
@@ -382,7 +385,7 @@ h3 {
 
 .section__works {
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 200px;
   overflow: hidden;
   position: relative;
 }
