@@ -29,16 +29,28 @@ window.addEventListener('scroll', () => {
 		prevScrollPos = currentScrollPos;
 	}
 
-	// if (currentScrollPos <= 0) {
-	// 	header.classList.remove('opacity')
-	// }
 	const sectionWorkCoords = sectionWork.getBoundingClientRect();
 	if (sectionWorkCoords.top < window.innerHeight && sectionWorkCoords.bottom >= 0) {
 		techBlock.classList.add('animation');
 		usedTech.classList.add('animation');
 		techH1.classList.add('animation');
 	}
+
+	if (window.innerWidth <= 640) {
+		const FOOTER = document.querySelector('.footer')
+		const sectionPortfolioCoords = sectionPortfolio.getBoundingClientRect();
+		if (sectionPortfolioCoords.top < window.innerHeight - 350 && sectionPortfolioCoords.bottom >= 0) {
+			FOOTER.classList.add('footer__fixed')
+			console.log('good');
+		} else {
+			FOOTER.classList.remove('footer__fixed')
+			console.log('bad');
+		}
+	}
+
+
 });
+
 
 burgerButton.addEventListener('click', () => {
 	hiddenList.classList.toggle('hidden')
@@ -139,10 +151,8 @@ btnSwitch.addEventListener('click', () => {
 const slider = new Swiper('.slider__main', {
 	centeredSlides: true,
 	freeMode: true,
-	slidesPerView: 1,
+	slidesPerView: 1.3,
 	direction: 'vertical',
-	// initialSlide: ,
-	// loop: true,
 	spaceBetween: 30,
 	mousewheel: {
 		sensitivity: 5
@@ -220,17 +230,6 @@ if (window.innerWidth >= 600 && window.innerWidth <= 768) {
 		slider.activeIndex > 0 ? disc.classList.add('hidden') : disc.classList.remove('hidden')
 	})
 }
-
-
-
-
-
-
-
-
-
-
-
 
 document.querySelectorAll('link').forEach(link => link.preventDefault)
 
