@@ -448,11 +448,12 @@ h3 {
   font-family: "Europe_b";
 }
 .used__tehnologis :not(:first-child) {
-  background-color: rgba(117, 117, 117, 0.1725490196);
+  background: rgba(131, 131, 131, 0.2588235294);
   font-size: calc(var(--index) * 1);
   letter-spacing: calc(var(--index) * 0.4);
   height: calc(var(--index) * 2);
   text-align: right;
+  height: 70px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -470,6 +471,9 @@ h3 {
 .tech__block {
   text-align: center;
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .animation {
@@ -499,7 +503,7 @@ h3 {
   display: flex;
   align-items: center;
   text-align: center;
-  background: rgba(112, 112, 112, 0.1921568627);
+  background: rgba(131, 131, 131, 0.2588235294);
   transition: 0.2s all ease-in-out;
 }
 .tech__skills-contant .contant-list img {

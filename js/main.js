@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {
 	}
 
 	const sectionWorkCoords = sectionWork.getBoundingClientRect();
-	if (sectionWorkCoords.top < window.innerHeight && sectionWorkCoords.bottom >= 0) {
+	if (sectionWorkCoords.top < window.innerHeight - 200 && sectionWorkCoords.bottom >= 0) {
 		techBlock.classList.add('animation');
 		usedTech.classList.add('animation');
 		techH1.classList.add('animation');
@@ -41,10 +41,8 @@ window.addEventListener('scroll', () => {
 		const sectionPortfolioCoords = sectionPortfolio.getBoundingClientRect();
 		if (sectionPortfolioCoords.top < window.innerHeight - 350 && sectionPortfolioCoords.bottom >= 0) {
 			FOOTER.classList.add('footer__fixed')
-			console.log('good');
 		} else {
 			FOOTER.classList.remove('footer__fixed')
-			console.log('bad');
 		}
 	}
 

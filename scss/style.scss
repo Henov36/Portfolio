@@ -525,11 +525,12 @@ h3 {
 	}
 
 	:not(:first-child) {
-		background-color: #7575752c;
+		background: #83838342;
 		font-size: calc(var(--index) * 1);
 		letter-spacing: calc(var(--index) * 0.4);
 		height: calc(var(--index) * 2);
 		text-align: right;
+		height: 70px;
 		margin-top: 10px;
 		display: flex;
 		justify-content: center;
@@ -549,6 +550,9 @@ h3 {
 .tech__block {
 	text-align: center;
 	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .animation {
@@ -579,7 +583,7 @@ h3 {
 		// justify-content: center;
 		align-items: center;
 		text-align: center;
-		background: #70707031;
+		background: #83838342;
 		transition: 0.2s all ease-in-out;
 
 		img {
@@ -626,9 +630,9 @@ h3 {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	
+
 	text-align: start;
-	
+
 
 	h5 {
 		font-family: 'Voice';
@@ -678,9 +682,9 @@ h3 {
 	font-size: 40px;
 	position: relative;
 	overflow: hidden;
-	
+
 	width: 200px;
-	
+
 	margin-left: 60px;
 	cursor: pointer;
 	box-shadow: 13px -8px 15px 4px rgba(20, 20, 173, 0.63);
@@ -745,7 +749,7 @@ h3 {
 	background-color: #000000;
 }
 
-.footer__fixed{
+.footer__fixed {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -805,6 +809,7 @@ h3 {
 .hidden {
 	visibility: hidden;
 }
+
 .copyright {
 	font-size: calc(var(--index) * 0.8);
 }
