@@ -1,3 +1,23 @@
+@media (max-height: 540px) {
+  .header {
+    height: 12vh;
+  }
+  .section__about {
+    height: 130vh;
+  }
+  .section__works {
+    height: 150vh;
+  }
+  .section__works .tech__skill-info {
+    margin-top: 0px;
+  }
+  .footer {
+    height: 70px;
+  }
+  .footer .copyright {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1312px) {
   h1 {
     font-size: calc(var(--index) * 4);
@@ -99,6 +119,10 @@
   .used__tehnologis :not(:first-child) {
     height: calc(var(--index) * 4);
     margin-top: 20px;
+    background: rgba(167, 167, 167, 0.1764705882);
+  }
+  .tech__skills-contant .contant-list {
+    background: rgba(167, 167, 167, 0.1764705882);
   }
   .discription {
     height: fit-content;
@@ -176,6 +200,7 @@
 @media (max-width: 600px) {
   .section__works {
     height: fit-content;
+    margin-top: 100px;
   }
   .tech__skill-h1 {
     height: 100px !important;

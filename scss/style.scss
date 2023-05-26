@@ -525,7 +525,7 @@ h3 {
 	}
 
 	:not(:first-child) {
-		background: #83838342;
+		background: #68686828;
 		font-size: calc(var(--index) * 1);
 		letter-spacing: calc(var(--index) * 0.4);
 		height: calc(var(--index) * 2);
@@ -583,7 +583,7 @@ h3 {
 		// justify-content: center;
 		align-items: center;
 		text-align: center;
-		background: #83838342;
+		background: #68686828;
 		transition: 0.2s all ease-in-out;
 
 		img {

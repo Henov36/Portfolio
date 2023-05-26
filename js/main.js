@@ -4,8 +4,6 @@ window.addEventListener('scroll', e => {
 	document.body.style.cssText += `--scrollTop: ${this.scrollY}px`
 });
 
-
-
 //// -=====   Header manipulation ====== ////
 const body = document.body
 const header = document.querySelector('.header');
@@ -36,7 +34,7 @@ window.addEventListener('scroll', () => {
 		techH1.classList.add('animation');
 	}
 
-	if (window.innerWidth <= 640) {
+	if (window.innerWidth <= 640 && window.innerHeight >= 540) {
 		const FOOTER = document.querySelector('.footer')
 		const sectionPortfolioCoords = sectionPortfolio.getBoundingClientRect();
 		if (sectionPortfolioCoords.top < window.innerHeight - 350 && sectionPortfolioCoords.bottom >= 0) {

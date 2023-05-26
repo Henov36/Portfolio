@@ -448,7 +448,7 @@ h3 {
   font-family: "Europe_b";
 }
 .used__tehnologis :not(:first-child) {
-  background: rgba(131, 131, 131, 0.2588235294);
+  background: rgba(104, 104, 104, 0.1568627451);
   font-size: calc(var(--index) * 1);
   letter-spacing: calc(var(--index) * 0.4);
   height: calc(var(--index) * 2);
@@ -503,7 +503,7 @@ h3 {
   display: flex;
   align-items: center;
   text-align: center;
-  background: rgba(131, 131, 131, 0.2588235294);
+  background: rgba(104, 104, 104, 0.1568627451);
   transition: 0.2s all ease-in-out;
 }
 .tech__skills-contant .contant-list img {
