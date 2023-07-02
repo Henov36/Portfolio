@@ -236,7 +236,7 @@ h3 {
 	z-index: 100001;
 	animation: swap 1s linear;
 	animation-fill-mode: forwards;
-	animation-delay: 1s;
+	animation-delay: 2s;
 	font-family: 'Fight This';
 }
 
@@ -283,7 +283,7 @@ h3 {
 		transform: translateX(1000px);
 		animation: rollleft 2.2s ease;
 		animation-fill-mode: forwards;
-		animation-delay: 1s;
+		animation-delay: 2s;
 
 	}
 
@@ -303,7 +303,7 @@ h3 {
 		transform: translateX(-1000px);
 		animation: rollright 1.8s ease;
 		animation-fill-mode: forwards;
-		animation-delay: 1s;
+		animation-delay: 2s;
 		background: linear-gradient(45deg, #f790a8 30%, #22e0ee 50%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
